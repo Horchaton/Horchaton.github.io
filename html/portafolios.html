@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ritmos</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+<body style="margin-top: 120px;">
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="Logo" class="logo-navbar">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-custom ml-3">Inicio <i class="fas fa-arrow-right"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="https://www.instagram.com/ritmos.di?igsh=NmQ2bnFtb3EwbTdm" class="nav-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="https://www.tiktok.com/@ritmos.di?_t=8qcj5iytWLe&_r=1" class="nav-link" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="https://www.linkedin.com/in/ritmos-di-357a61330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="nav-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="https://www.facebook.com/profile.php?id=61565048740814&mibextid=ZbWKwL" class="nav-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="main-header text-left">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="text-container" style="margin-top: -50px;">
+                <h1 class="text-gradient">Ritmos 2024</h1>
+                <hr>
+                <p class="subtext">Portafolios 2024 - Universidad Don Bosco</p>
+            </div>
+        </div>
+    </header>
+    <div class="filter-container" style="margin-top: 15px; margin-bottom: -50px;">
+        <button class="filter-button btn-yellow" onclick="filterCards('all')">Todos</button>
+        <button class="filter-button btn-yellow" onclick="filterCards('fabricacion-digital')">Fabricación Digital</button>
+        <button class="filter-button btn-pink" onclick="filterCards('mobiliario')">Mobiliario</button>
+        <button class="filter-button btn-white"onclick="filterCards('productos-varios')">Productos varios</button>
+        <button class="filter-button btn-purple" onclick="filterCards('textiles')">Textiles</button>
+    </div>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+        <!-- Card de Fabricación Digital -->
+         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card fabricacion-digital" data-category="fabricacion-digital" data-bs-toggle="modal" data-bs-target="#modalAri" style="cursor: pointer;">
+            <img src="../img/users/FD/a1.jpg" alt="Imagen de Proyecto" class="card-image">
+            <div class="card-info">
+                <h3>Ari Design</h3>
+                <p>Ariadna Martínez</p>
+                <span class="card-tag">Fabricación Digital</span>
+            </div>
+        </div>
+         </div>
+        <!-- Card de Fabricación Digital -->
+         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card fabricacion-digital" data-category="fabricacion-digital" data-bs-toggle="modal" data-bs-target="#modalb1" style="cursor: pointer;">
+            <img src="../img/users/FD/B1.jpg" alt="Imagen de Proyecto" class="card-image">
+            <div class="card-info">
+                <h3>BAAV</h3>
+                <p>Brandon Arévalo</p>
+                <span class="card-tag">Fabricación Digital</span>
+            </div>
+        </div>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card fabricacion-digital" data-category="fabricacion-digital" data-bs-toggle="modal" data-bs-target="#modalg1" style="cursor: pointer;">
+            <img src="../img/users/FD/G1.jpg" alt="Imagen de Proyecto" class="card-image">
+            <div class="card-info">
+                <h3>Grecia Reyes</h3>
+                <p>Grecia Reyes</p>
+                <span class="card-tag">Fabricación Digital</span>
+            </div>
+        </div>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card fabricacion-digital" data-category="fabricacion-digital" data-bs-toggle="modal" data-bs-target="#modalk2" style="cursor: pointer;">
+            <img src="../img/users/FD/K2.jpg" alt="Imagen de Proyecto" class="card-image">
+            <div class="card-info">
+                <h3>Karen Martínez</h3>
+                <p>Karen Martínez</p>
+                <span class="card-tag">Fabricación Digital</span>
+            </div>
+        </div>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card fabricacion-digital" data-category="fabricacion-digital" data-bs-toggle="modal" data-bs-target="#modalk1" style="cursor: pointer;">
+            <img src="../img/users/FD/Ke1.jpg" alt="Imagen de Proyecto" class="card-image">
+            <div class="card-info">
+                <h3>Kevin Morán </h3>
+                <p>Kevin Morán</p>
+                <span class="card-tag">Fabricación Digital</span>
+            </div>
+        </div>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card fabricacion-digital" data-category="fabricacion-digital" data-bs-toggle="modal" data-bs-target="#modalm1" style="cursor: pointer;">
+            <img src="../img/users/FD/M1.jpg" alt="Imagen de Proyecto" class="card-image">
+            <div class="card-info">
+                <h3>Stream Marco</h3>
+                <p>Marcos Castillo</p>
+                <span class="card-tag">Fabricación Digital</span>
+            </div>
+        </div>   
+         </div>  
+        <!-- Card de Mobiliario -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card mobiliario card-rose" data-category="mobiliario" data-bs-toggle="modal" data-bs-target="#modalAle" style="cursor: pointer;">
+            <img src="../img/users/Mob/A2.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Ale Córdova creative co</h3>
+                <p>Alejandra Córdova</p>
+                <span class="card-tag">Mobiliario</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card mobiliario card-rose" data-category="mobiliario" data-bs-toggle="modal" data-bs-target="#modalDennys" style="cursor: pointer;">
+            <img src="../img/users/Mob/D2.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Dennys Reyes </h3>
+                <p>Dennys Reyes</p>
+                <span class="card-tag">Mobiliario</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card mobiliario card-rose" data-category="mobiliario" data-bs-toggle="modal" data-bs-target="#modalEdgar" style="cursor: pointer;">
+            <img src="../img/users/Mob/E1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>ED STUDIO</h3>
+                <p>Edgar Mira</p>
+                <span class="card-tag">Mobiliario</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card mobiliario card-rose" data-category="mobiliario" data-bs-toggle="modal" data-bs-target="#modalFrida" style="cursor: pointer;">
+            <img src="../img/users/Mob/F2.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Eleven Studio</h3>
+                <p>Frida Marroquín</p>
+                <span class="card-tag">Mobiliario</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card mobiliario card-rose" data-category="mobiliario" data-bs-toggle="modal" data-bs-target="#modalGrecia" style="cursor: pointer;">
+            <img src="../img/users/Mob/G1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Amaria</h3>
+                <p>Gracia García</p>
+                <span class="card-tag">Mobiliario</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card mobiliario card-rose" data-category="mobiliario" data-bs-toggle="modal" data-bs-target="#modalMaynor" style="cursor: pointer;">
+            <img src="../img/users/Mob/M1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>ARCADIAS</h3>
+                <p>Maynor Castillo</p>
+                <span class="card-tag">Mobiliario</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card mobiliario card-rose" data-category="mobiliario" data-bs-toggle="modal" data-bs-target="#modalMichelle" style="cursor: pointer;">
+            <img src="../img/users/Mob/Mi2.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Studdio Saez</h3>
+                <p>Michelle González</p>
+                <span class="card-tag">Mobiliario</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card mobiliario card-rose" data-category="mobiliario" data-bs-toggle="modal" data-bs-target="#modalRodrigo" style="cursor: pointer;">
+            <img src="../img/users/Mob/R1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Milla Studio</h3>
+                <p>Rodrigo Milla</p>
+                <span class="card-tag">Mobiliario</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card mobiliario card-rose" data-category="mobiliario" data-bs-toggle="modal" data-bs-target="#modalCarlos" style="cursor: pointer;">
+            <img src="../img/users/Mob/T1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>TIMU</h3>
+                <p>Carlos Escobar</p>
+                <span class="card-tag">Mobiliario</span>
+            </div>
+        </div>
+        </div>
+        <!-- Card de Productos Varios -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4"> 
+        <div class="card productos-varios card-white" data-category="productos-varios" data-bs-toggle="modal" data-bs-target="#modalAdrian" style="cursor: pointer;">
+            <img src="../img/users/PV/c1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Azrian</h3>
+                <p>Adrián Soto</p>
+                <span class="card-tag">Productos Varios</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4"> 
+        <div class="card productos-varios card-white" data-category="productos-varios" data-bs-toggle="modal" data-bs-target="#modalNicole" style="cursor: pointer;">
+            <img src="../img/users/PV/f1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>New Hub</h3>
+                <p>Nicole Hasbún</p>
+                <span class="card-tag">Productos Varios</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4"> 
+        <div class="card productos-varios card-white" data-category="productos-varios" data-bs-toggle="modal" data-bs-target="#modalCamila" style="cursor: pointer;">
+            <img src="../img/users/PV/Ca1.png" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>All in Play</h3>
+                <p>Camila Aceituno</p>
+                <span class="card-tag">Productos Varios</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card productos-varios card-white" data-category="productos-varios" data-bs-toggle="modal" data-bs-target="#modalLeonor" style="cursor: pointer;">
+            <img src="../img/users/PV/g1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Gabriela Polanco</h3>
+                <p>Leonor Polanco</p>
+                <span class="card-tag">Productos Varios</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card productos-varios card-white" data-category="productos-varios" data-bs-toggle="modal" data-bs-target="#modalDebora" style="cursor: pointer;">
+            <img src="../img/users/PV/m2.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Empakto By Deb</h3>
+                <p>Debora Romero</p>
+                <span class="card-tag">Productos Varios</span>
+            </div>
+        </div>
+        </div>
+        <!-- Card de Textiles -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4"> 
+        <div class="card textiles card-purple" data-category="textiles" data-bs-toggle="modal" data-bs-target="#modalBerenice" style="cursor: pointer;">
+            <img src="../img/users/Tex/B1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Organic Symbol</h3>
+                <p>Berenice Suncín</p>
+                <span class="card-tag">Textiles</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card textiles card-purple"data-category="textiles" data-bs-toggle="modal" data-bs-target="#modalCristela" style="cursor: pointer;">
+            <img src="../img/users/Tex/C1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Kriss Studio</h3>
+                <p>Cristabel Escobar</p>
+                <span class="card-tag">Textiles</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card textiles card-purple"  data-category="textiles" data-bs-toggle="modal" data-bs-target="#modalDaniela" style="cursor: pointer;">
+            <img src="../img/users/Tex/D2.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Daniela Ávalos</h3>
+                <p>Daniela Ávalos</p>
+                <span class="card-tag">Textiles</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4"> 
+        <div class="card textiles card-purple" data-category="textiles" data-bs-toggle="modal" data-bs-target="#modalKevin" style="cursor: pointer;">
+            <img src="../img/users/Tex/Kp1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Kevin Peña Diseño Industrial </h3>
+                <p>Kevin Peña</p>
+                <span class="card-tag">Textiles</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4"> 
+        <div class="card textiles card-purple" data-category="textiles" data-bs-toggle="modal" data-bs-target="#modalMelisa" style="cursor: pointer;">
+            <img src="../img/users/Tex/Me2.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Meli B. Desing</h3>
+                <p>Melissa Ramírez</p>
+                <span class="card-tag">Textiles</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card textiles card-purple" data-category="textiles" data-bs-toggle="modal" data-bs-target="#modalN12" style="cursor: pointer;">
+            <img src="../img/users/Tex/N1.jpg" alt="Imagen de Proyecto">
+            <div class="card-info">
+                <h3>Nathalie Reyna</h3>
+                <p>Nathalie Reyna</p>
+                <span class="card-tag">Textiles</span>
+            </div>
+        </div>
+        </div>
+            </div>
+        </div>
+    </section>
+<!-- Modales -->
+    <div class="modal fade" id="modalAri" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-light" id="exampleModalLabel">Ariadna Martínez</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- Columna Izquierda: Imagen de la Persona -->
+                            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                                <img src="../img/users/FD/a2.jpg" alt="Foto del Creador" class="creator-image-square img-fluid">
+                            </div>
+    
+                            <!-- Columna Derecha: Información y Logo -->
+                            <div class="col-12 col-md-8">
+                                <div class="d-flex flex-column flex-md-row align-items-center">
+                                    <!-- Información -->
+                                    <div class="flex-grow-1">
+                                        <h4 class="text-primary">Ari Design</h4>
+                                        <p class="text-muted">3D / Fabricación Digital</p>
+                                        <p class="description text-light" style="font-size: 1.1rem;">                                   
+                                        </style>
+                                            Hola soy Ari, me apasiona el diseño 3D y poder mejorar la experiencia del usuario para poder llegar a la mejor 
+                                            satisfacción del usuario.</p>
+                                        </p>
+                                    </div>
+                                    <!-- Logo a la Derecha -->
+                                    <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                        <img src="../img/Marcas/Ari.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                        style="
+                                        max-width: 200px; 
+                                        height: auto;
+                                        background-color: white;
+                                        border-radius: 10px;
+                                        display: block;
+                                        margin-top: auto;
+                                        margin-left: auto;
+                                        ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Botones debajo -->
+                        <div class="row mt-4">
+                            <div class="col-20 d-flex flex-column align-items-center gap-2">                                
+                                <a href="https://ariadnaportfolio.cargo.site/ " target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                                <a href="../img/cv/Aricv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                <a href="https://www.linkedin.com/in/ariadna-pino/" target="_blank" class="btn btn-info mx-2">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- modal 2 -->
+<div class="modal fade" id="modalb1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Brandon Arévalo</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/FD/B2.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">BAAV</h4>
+                                    <p class="text-muted">3D / Fabricación Digital</p>
+                                    <p class="description text-light" style="font-size: 1.1rem;">Diseñador industrial especializado en el diseño y la fabricación digital, contando con habilidades destacadas en el fabricación de maquinaria CNC.</p>
+
+                                </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Brandon.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    background-color: white;
+                                    border-radius: 10px;
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://vaabvs.wixsite.com/baav-1" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Brandoncv.pdf" class="btn btn-outline-light" download>Descargar CV</a>                            
+                            <a href="https://www.linkedin.com/in/brandon-ar%C3%A9valo-valle-242989277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="btn btn-info mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal 3 -->
+<div class="modal fade" id="modalg1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Grecia Reyes</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/FD/G2.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Grecia Reyes</h4>
+                                    <p class="text-muted">3D / Fabricación Digital</p>
+                                    <p class="description text-light">Soy una diseñadora industrial especializada en fabricación digital y modelado CAD, dedicada a crear productos innovadores y funcionales. Mi enfoque combina precisión tecnológica con creatividad, permitiéndome desarrollar soluciones eficientes y personalizadas para diversas industrias.</p>
+                                </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Grecia.jpg" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    background-color: white;
+                                    border-radius: 10px;
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://www.behance.net/gallery/210664545/Portafolio-de-Diseno-Industrial-2024" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Greciacv.pdf" class="btn btn-outline-light mx-2" download>Descargar CV</a>                            
+                            <a href="https://www.linkedin.com/in/grecia-reyes-id/" target="_blank" class="btn btn-info mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal 4 -->
+<div class="modal fade" id="modalk2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Karen Martínez</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/FD/K1.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Karen Martínez</h4>
+                                    <p class="text-muted">3D / Fabricación Digital</p>
+                                    <p class="description text-light">Apasionada por el modelado 3D y los renders fotorrealistas, me especializo en diseños biofílicos y sostenibles que conectan naturaleza y funcionalidad. Con una visión enriquecida por experiencias internacionales, transforma espacios y productos en entornos que inspiran y respetan el entorno.</p>                                </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Karen.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    background-color: white;
+                                    border-radius: 10px;
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://portfolio.adobe.com/7aef2a6e-b5ab-4fe7-93cb-e5ca9a009334/editor/" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Karencv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                            <a href="https://www.linkedin.com/in/karen-mart%C3%ADnez-88616826b/" target="_blank" class="btn btn-info mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal 5 -->
+<div class="modal fade" id="modalk1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Kevin Morán</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/FD/Ke2.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Kevin Morán</h4>
+                                    <p class="text-muted">3D / Fabricación Digital</p>
+                                    <p class="description text-light">Soy un Diseñor Industrial y de Productos con amplia experiencia en diseño gráfico, mis competencias incluyen el modelado digital y la fotografía de productos, además de un dominio avanzado de programas de diseño como Adobe Illustrator, Photoshop y Corel.</p>                               
+                                 </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Kevin.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    /* background-color: white; */
+                                    border-radius: 10px;
+                                    padding: 12px;
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://www.behance.net/kevinmorn1" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Kevincv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                            <a href="https://www.linkedin.com/in/kevin-mor%C3%A1n-4074062b1/" target="_blank" class="btn btn-info mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal 6 -->
+<div class="modal fade" id="modalm1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Marcos Castillo</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/FD/M2.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Stream Marco</h4>
+                                    <p class="text-muted">3D / Fabricación Digital</p>
+                                    <p class="description text-light">Diseñador Gráfico/industrial y Editor de videos</p>                               
+                                 </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Marcos.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    /* background-color: white; */
+                                    border-radius: 10px;
+                                    padding: 12px;
+                                    display: block;
+                                    margin: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://www.behance.net/gallery/209092323/Stream-Broken-Portfolio" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Marcoscv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                <a href="https://www.instagram.com/stream_marco" target="_blank" class="btn btn-instagram">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>                        
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modales mobiliario -->
+ <!-- modal1 -->
+ <div class="modal fade modal-rose" id="modalAle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Alejandra Córdova</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/Mob/A2.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Ale Córdova creative co</h4>
+                                    <p class="text-muted">Mobiliario / Interiores</p>
+                                    <p class="description text-light">Hola soy Ale, y como diseñadora industrial me apasiona el diseño conceptual digital, prototipado y modelado 3D, centradas en el diseño de mobiliario con enfoque a la decoración de interiores, eso me ha permitido crear 
+                                        diseños estéticos y funcionales que satisfacen las necesidades del usuario.</p>                               
+                                 </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Ale.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    /* background-color: white; */
+                                    border-radius: 10px;
+                                    padding: 12px;
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: 35px;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://readymag.website/u1731518676/5015045/" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Alecv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                            <!-- <a href="https://www.linkedin.com/in/kevin-mor%C3%A1n-4074062b1/" target="_blank" class="btn btn-info mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal2--> 
+<div class="modal fade modal-rose" id="modalDennys" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg">
+       <div class="modal-content">
+           <div class="modal-header border-0">
+               <h5 class="modal-title text-light" id="exampleModalLabel">Dennys Reyes</h5>
+               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+               <div class="container-fluid">
+                   <div class="row">
+                       <!-- Columna Izquierda: Imagen de la Persona -->
+                       <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                           <img src="../img/users/Mob/D1.jpg" alt="Foto del Creador" class="creator-image-square">
+                       </div>
+
+                       <!-- Columna Derecha: Información y Logo -->
+                       <div class="col-12 col-md-8">
+                           <div class="d-flex flex-column flex-md-row align-items-center">
+                               <!-- Información -->
+                               <div class="flex-grow-1">
+                                   <h4 class="text-primary">Dennys Reyes</h4>
+                                   <p class="text-muted">Mobiliario / Interiores</p>
+                                   <p class="description text-light" style="font-size: 1.1rem;">Diseñador con habilidades en el modelado 3D, prototipado e ilustración. Actualmente enfocado en el diseño y fabricación de muebles destinados a la resolución de espacios reducidos</p>  
+                                </div>
+                               <!-- Logo a la Derecha -->
+                               <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                   <img src="../img/Marcas/Dennys.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                   style="
+                                   max-width: 200px; 
+                                   height: auto;
+                                   background-color: white;
+                                   border-radius: 10px;
+                                   padding: 12px;
+                                   display: block;
+                                   margin-top: auto;
+                                   margin-left: auto;
+                                   ">
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- Botones debajo -->
+                   <div class="row mt-4">
+                    <div class="col-20 d-flex flex-column align-items-center gap-2">                           
+                        <a href="https://www.behance.net/dennysreyes" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                           <a href="../img/cv/Dennyscv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                           <a href=" https://www.linkedin.com/in/dennys-reyes-291846204/" target="_blank" class="btn btn-info mx-2">
+                               <i class="fab fa-linkedin"></i> LinkedIn
+                           </a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- modal3--> 
+<div class="modal fade modal-rose" id="modalEdgar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg">
+       <div class="modal-content">
+           <div class="modal-header border-0">
+               <h5 class="modal-title text-light" id="exampleModalLabel">Edgar Mira</h5>
+               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+               <div class="container-fluid">
+                   <div class="row">
+                       <!-- Columna Izquierda: Imagen de la Persona -->
+                       <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                           <img src="../img/users/Mob/E2.jpg" alt="Foto del Creador" class="creator-image-square">
+                       </div>
+
+                       <!-- Columna Derecha: Información y Logo -->
+                       <div class="col-12 col-md-8">
+                           <div class="d-flex flex-column flex-md-row align-items-center">
+                               <!-- Información -->
+                               <div class="flex-grow-1">
+                                   <h4 class="text-primary">ED STUDIO</h4>
+                                   <p class="text-muted">Mobiliario / Interiores</p>
+                                   <p class="description text-light" style="font-size: 1.1rem;">Diseñador Industrial apasionado por el diseño de mobiliario y el modelado 3D</p>  
+                                </div>
+                               <!-- Logo a la Derecha -->
+                               <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                   <img src="../img/Marcas/Edgar.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                   style="
+                                   max-width: 200px; 
+                                   height: auto;
+                                   background-color: white;
+                                   border-radius: 10px;
+                                   padding: 12px;
+                                   display: block;
+                                   margin-top: auto;
+                                   margin-left: auto;
+                                   ">
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- Botones debajo -->
+                   <div class="row mt-4">
+                    <div class="col-20 d-flex flex-column align-items-center gap-2">                           
+                        <a href="https://www.behance.net/francismiraca" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                           <a href="../img/cv/Edgarcv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                           <a href="https://www.linkedin.com/in/edgardo-mira-1a7638334/" target="_blank" class="btn btn-info mx-2">
+                               <i class="fab fa-linkedin"></i> LinkedIn
+                           </a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+  
+<!-- modal4--> 
+<div class="modal fade modal-rose" id="modalFrida" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Frida Marroquín</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/Mob/F2.jpg" alt="Foto del Creador" class="creator-image-square img-fluid">
+                        </div>
+
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Eleven Studio</h4>
+                                    <p class="text-muted">Mobiliario / Interiores</p>
+                                    <p class="description text-light">
+                                        ¡Hola! Soy Frida, mi pasión se enfoca en la creación de visualizaciones digitales en 3D,
+                                        especialmente en el diseño de mobiliarios y espacios. Me entusiasma desarrollar proyectos
+                                        desde su concepción hasta su representación digital, plasmando la esencia del diseño en
+                                        entornos virtuales con atención al detalle e innovación para crear productos únicos.
+                                    </p>
+                                </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Frida.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    /* background-color: white; */
+                                    border-radius: 10px;
+                                    padding: 12px;
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://www.behance.net/gallery/209080063/Portafolio-2024" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Fridacv.pdf" class="btn btn-outline-light mx-2" download>Descargar CV</a>
+                                <a href="https://www.linkedin.com/in/frida-marroqu%C3%ADn/" target="_blank" class="btn btn-info mx-2">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+ 
+<!-- modal5--> 
+<div class="modal fade modal-rose" id="modalGrecia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Gracia García</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/Mob/G2.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+ 
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Amaria</h4>
+                                    <p class="text-muted">Mobiliario / Interiores</p>
+                                    <p class="description text-light" style="font-size: 1.2rem;">Amar y servir, a través del diseño</p>  
+                                 </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Gracia.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+/*                                     background-color: white;
+ */                                    border-radius: 10px;
+                                    padding: 12px;
+                                    display: block;
+                                    margin-top: 50px;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                            <a href="https://amaria.cargo.site/" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Graciacv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                            <a href="https://www.linkedin.com/in/gracia-campos/" target="_blank" class="btn btn-info mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div> 
+ <!-- modal6--> 
+ <div class="modal fade modal-rose" id="modalMaynor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+             <div class="modal-header border-0">
+                 <h5 class="modal-title text-light" id="exampleModalLabel">Maynor Castillo</h5>
+                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <!-- Columna Izquierda: Imagen de la Persona -->
+                         <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                             <img src="../img/users/Mob/M2.jpg" alt="Foto del Creador" class="creator-image-square">
+                         </div>
+  
+                         <!-- Columna Derecha: Información y Logo -->
+                         <div class="col-12 col-md-8">
+                             <div class="d-flex flex-column flex-md-row align-items-center">
+                                 <!-- Información -->
+                                 <div class="flex-grow-1">
+                                     <h4 class="text-primary">ARCADIA</h4>
+                                     <p class="text-muted">Mobiliario / Interiores</p>
+                                     <p class="description text-light">Soy Maynor Oscar Castillo Aquino, diseñador industrial especializado en la creación de productos y mobiliario que integran estética y funcionalidad. Mi experiencia abarca una amplia variedad de proyectos orientados a mejorar la calidad de vida a través de soluciones de diseño eficientes y adaptadas a distintos entornos.</p>  
+                                  </div>
+                                 <!-- Logo a la Derecha -->
+                                 <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                     <img src="../img/Marcas/Maynor.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                     style="
+                                     max-width: 200px; 
+                                     height: auto;
+ /*                                     background-color: white;
+  */                                 border-radius: 10px;
+                                     padding: 12px;
+                                     display: block;
+                                     margin-top: auto;
+                                     margin-left: auto;
+                                     ">
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Botones debajo -->
+                     <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                            <a href="https://www.behance.net/maynorcastill" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Maynorcv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+  </div>  
+  <!-- modal7--> 
+  <div class="modal fade modal-rose" id="modalMichelle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+              <div class="modal-header border-0">
+                  <h5 class="modal-title text-light" id="exampleModalLabel">Michelle González</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <!-- Columna Izquierda: Imagen de la Persona -->
+                          <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                              <img src="../img/users/Mob/Mi1.jpg" alt="Foto del Creador" class="creator-image-square">
+                          </div>
+   
+                          <!-- Columna Derecha: Información y Logo -->
+                          <div class="col-12 col-md-8">
+                              <div class="d-flex flex-column flex-md-row align-items-center">
+                                  <!-- Información -->
+                                  <div class="flex-grow-1">
+                                      <h4 class="text-primary">Studdio Saez</h4>
+                                      <p class="text-muted">Mobiliario / Interiores</p>
+                                      <p class="description text-light">Especialista en diseños de stands para marcas  dentro del sector retail; además de trabajar en áreas como social media, diseño gráfico y diseño 3D.</p>
+                                    </div>
+                                  <!-- Logo a la Derecha -->
+                                  <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                      <img src="../img/Marcas/Michelle.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                      style="
+                                      max-width: 200px; 
+                                      height: auto;
+  /*                                     background-color: white;
+   */                                 border-radius: 10px;
+                                      padding: 12px;
+                                      display: block;
+                                      margin-top: auto;
+                                      margin-left: auto;
+                                      ">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Botones debajo -->
+                      <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                            <a href="https://www.behance.net/michellegher" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Michellecv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                <a href="//www.linkedin.com/in/michelle-gonz%C3%A1lez-142a90244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="btn btn-info mx-2">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+   </div>  
+<!-- modal8--> 
+<div class="modal fade modal-rose" id="modalRodrigo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Rodrigo Milla</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/Mob/R2.jpg" alt="Foto del Creador" class="creator-image-square img-fluid">
+                        </div>
+
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Milla Studio</h4>
+                                    <p class="text-muted">Mobiliario / Interiores</p>
+                                    <p class="description text-light">
+                                        Cuento con experiencia en estrategias de marketing, diseño de mobiliario y espacios conceptuales y 
+                                        de producción así como experiencia en modelado y renders 3D | Diseño de Productos | Diseño 3D
+                                    </p>
+                                </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Milla.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 175px; 
+                                    height: auto;
+                                    display: block;
+                                    background-color: rgb(255, 255, 255);
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    padding-left: -5px;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                            <a href="https://alexandersomilla.wixsite.com/millastudio" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Millacv.pdf" class="btn btn-outline-light mx-2" download>Descargar CV</a>
+                                <a href="https://www.linkedin.com/in/rodrigo-sol%C3%B3rzano-milla/" target="_blank" class="btn btn-info mx-2">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<!-- modal9-->
+<div class="modal fade modal-rose" id="modalCarlos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Carlos Escobar</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/Mob/T2.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+ 
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">TIMU</h4>
+                                    <p class="text-muted">Mobiliario / Interiores</p>
+                                    <p class="description text-light">!Hola, soy Carlos Murcia¡, diseñador industrial especializado en el área del Diseño 3D y fabricación de mobiliario e interiores.</p>
+                                </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Carlos.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    background-color: white;
+                                    border-radius: 10px;
+                                    /* padding: 5px; */
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://titomurcia16.wixsite.com/timu-el-salvador" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Carloscv.pdf" class="btn btn-outline-light mx-2" download>Descargar CV</a>
+                                <a href="https://www.linkedin.com/in/timu-el-salvador-a69051330/" target="_blank" class="btn btn-info mx-2">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>   
+ <!-- Modal productos varios--> 
+ <!--  modal1 -->
+ <div class="modal fade modal-white" id="modalAdrian" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+             <div class="modal-header border-0">
+                 <h5 class="modal-title text-light" id="exampleModalLabel">Adrián Soto</h5>
+                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <!-- Columna Izquierda: Imagen de la Persona -->
+                         <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                             <img src="../img/users/PV/c2.jpg" alt="Foto del Creador" class="creator-image-square">
+                         </div>
+  
+                         <!-- Columna Derecha: Información y Logo -->
+                         <div class="col-12 col-md-8">
+                             <div class="d-flex flex-column flex-md-row align-items-center">
+                                 <!-- Información -->
+                                 <div class="flex-grow-1">
+                                     <h4 class="text-primary">Azrian</h4>
+                                     <p class="text-muted">Fabricación digital / Ilustración</p>
+                                     <p class="description text-light">Soy un diseñador creativo que le apasiona encontrar soluciones interesantes a problemas comúnes, me desempeño especialmente en el área de la ilustración y la fabricación digital. </p>
+                                    </div>
+                                 <!-- Logo a la Derecha -->
+                                 <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                     <img src="../img/Marcas/Adrian.jpg" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                     style="
+                                     max-width: 200px; 
+                                     height: auto;
+                                     background-color: white;
+                                     border-radius: 10px;
+                                     padding: 5px;
+                                     display: block;
+                                     margin-top: auto;
+                                     margin-left: auto;
+                                     ">
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Botones debajo -->
+                     <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                            <a href="https://www.behance.net/adrinsoto" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Adriancv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                <a href="https://www.linkedin.com/in/adrian-soto-22503a2b4?" target="_blank" class="btn btn-info mx-2">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+  </div>   
+  <!--  modal2 -->
+  <div class="modal fade modal-white" id="modalNicole" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+              <div class="modal-header border-0">
+                  <h5 class="modal-title text-light" id="exampleModalLabel">Nicole Hasbún</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <!-- Columna Izquierda: Imagen de la Persona -->
+                          <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                              <img src="../img/users/PV/f2.jpg" alt="Foto del Creador" class="creator-image-square">
+                          </div>
+   
+                          <!-- Columna Derecha: Información y Logo -->
+                          <div class="col-12 col-md-8">
+                              <div class="d-flex flex-column flex-md-row align-items-center">
+                                  <!-- Información -->
+                                  <div class="flex-grow-1">
+                                      <h4 class="text-primary">New Hub</h4>
+                                      <p class="text-muted">Fabricación digital / Ilustración</p>
+                                      <p class="description text-light">Soy Nicole Hasbún, diseñadora industrial y de productos. A lo largo de mi carrera he descubierto como el  poder conocer e interactuar con los usuarios ha sido el motor para desarrollar diseños centrados en sus necesidades y brindarles más que una solución una  experiencia y funcionalidad.</p>
+                                     </div>
+                                  <!-- Logo a la Derecha -->
+                                  <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                      <img src="../img/Marcas/Nicole.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                      style="
+                                      max-width: 200px; 
+                                      height: auto;
+                                      background-color: white;
+                                      border-radius: 10px;
+                                      padding: 5px;
+                                      display: block;
+                                      margin-top: auto;
+                                      margin-left: auto;
+                                      ">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Botones debajo -->
+                      <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                            <a href="https://nicolehasbun6.wixsite.com/my-site" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Nicolecv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                <a href="https://www.instagram.com/p/DBX7LTzOk9h/?igsh=bjR0amw5eDVlbHhq" target="_blank" class="btn btn-instagram">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+   </div>   
+   <!--  modal3 -->
+   <div class="modal fade modal-white" id="modalCamila" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered modal-lg">
+           <div class="modal-content">
+               <div class="modal-header border-0">
+                   <h5 class="modal-title text-light" id="exampleModalLabel">Camila Aceituno</h5>
+                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                   <div class="container-fluid">
+                       <div class="row">
+                           <!-- Columna Izquierda: Imagen de la Persona -->
+                           <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                               <img src="../img/users/PV/Ca1.png" alt="Foto del Creador" class="creator-image-square">
+                           </div>
+    
+                           <!-- Columna Derecha: Información y Logo -->
+                           <div class="col-12 col-md-8">
+                               <div class="d-flex flex-column flex-md-row align-items-center">
+                                   <!-- Información -->
+                                   <div class="flex-grow-1">
+                                       <h4 class="text-primary">All in Play</h4>
+                                       <p class="text-muted">Productos infantiles</p>
+                                       <p class="description text-light">Estudiante de Diseño Industrial con experiencia en diversas técnicas de elaboración de productos y pasión por el diseño inclusivo para personas con discapacidad.
+                                        Amante del trabajo manual y la creatividad.
+                                        Motivada a aprender habilidades prácticas para enfrentar nuevos desafíos creativos.</p>
+                                      </div>
+                                   <!-- Logo a la Derecha -->
+                                   <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                       <img src="../img/Marcas/Camila.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                       style="
+                                       max-width: 200px; 
+                                       height: auto;
+                                       background-color: white;
+                                       border-radius: 10px;
+                                       padding: 5px;
+                                       display: block;
+                                       margin-top: auto;
+                                       margin-left: auto;
+                                       ">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Botones debajo -->
+                       <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                              
+                            <a href="https://camilaaceituno.cargo.site/" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                              <a href="../img/cv/Camilacv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                              <a href="https://www.linkedin.com/in/camila-aceituno-61341b127/" target="_blank" class="btn btn-info mx-2">
+                                   <i class="fab fa-linkedin"></i> LinkedIn
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>   
+<!-- modal extra -->
+    <div class="modal fade modal-white" id="modalLeonor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-light" id="exampleModalLabel">Leonor Polanco</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- Columna Izquierda: Imagen de la Persona -->
+                            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                                <img src="../img/users/PV/g2.jpg" alt="Foto del Creador" class="creator-image-square">
+                            </div>
+     
+                            <!-- Columna Derecha: Información y Logo -->
+                            <div class="col-12 col-md-8">
+                                <div class="d-flex flex-column flex-md-row align-items-center">
+                                    <!-- Información -->
+                                    <div class="flex-grow-1">
+                                        <h4 class="text-primary">Gabriela Polanco</h4>
+                                        <p class="text-muted">Textiles / Accesorios</p>
+                                        <p class="description text-light" style="font-size: 1.1rem;">Enfocada en la creación de productos que faciliten la vida de las personas y traigan alegría y confianza en quien lo utiliza</p>
+                                       </div>
+                                    <!-- Logo a la Derecha -->
+                                    <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                        <img src="../img/Marcas/Polanco.jpg" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                        style="
+                                        max-width: 200px; 
+                                        height: auto;
+                                        /* background-color: white; */
+                                        border-radius: 0px;
+                                        padding: 5px;
+                                        padding-right: 30px;
+                                        display: block;
+                                        margin-top: auto;
+                                        margin-left: auto;
+                                        ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Botones debajo -->
+                        <div class="row mt-4">
+                            <div class="col-20 d-flex flex-column align-items-center gap-2">
+                                <a href="https://www.behance.net/gabrielazucenaperfil" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                                <a href="/img/cv/Polancocv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                    <a href="https://www.instagram.com/gabypolan/" target="_blank" class="btn btn-instagram">
+                                        <i class="fab fa-instagram"></i> Instagram
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>   
+<!--  modal4 -->
+<div class="modal fade modal-white" id="modalDebora" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Debora Romero</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/PV/m2.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+ 
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Empakto By Deb</h4>
+                                    <p class="text-muted">Empaques</p>
+                                    <p class="description text-light" style="font-size: 1.1rem;">Expresiva y entusiasta ante el desarrollo de nuevas ideas. De mente creativa ante la resolución de problemáticas y observadora a los detalles. </p>
+                                   </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Debora.jpeg" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+/*                                  background-color: white;
+ */                                 border-radius: 10px;
+                                    padding: 5px;
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                            <a href="https://www.behance.net/gallery/210672219/PORTAFOLIO-2024" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Deboracv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div> 
+ <!-- modales textiles -->
+ <!--  modal1 -->
+ <div class="modal fade modal-morado" id="modalBerenice" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+             <div class="modal-header border-0">
+                 <h5 class="modal-title text-light" id="exampleModalLabel">Berenice Suncín</h5>
+                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <!-- Columna Izquierda: Imagen de la Persona -->
+                         <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                             <img src="../img/users/Tex/B2.jpg" alt="Foto del Creador" class="creator-image-square">
+                         </div>
+  
+                         <!-- Columna Derecha: Información y Logo -->
+                         <div class="col-12 col-md-8">
+                             <div class="d-flex flex-column flex-md-row align-items-center">
+                                 <!-- Información -->
+                                 <div class="flex-grow-1">
+                                     <h4 class="text-primary">Organic Symbol</h4>
+                                     <p class="text-muted">Empaques</p>
+                                     <p class="description text-light">Diseñadora de productos en base a la creación de soluciones innovadoras y funcionales que mejoran la experiencia del usuario. Mi enfoque se centra en la investigación y el desarrollo de conceptos que combinan estética, usabilidad y diferenciación. A lo largo de mi carrera, he llevado a cabo, con equipos multidisciplinarios, el desarrollo de proyectos, desde la ideación, hasta la producción, siempre con un compromiso firme entre la calidad y la atención al detalle.</p>
+                                    </div>
+                                 <!-- Logo a la Derecha -->
+                                 <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                     <img src="../img/Marcas/Berenice.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                     style="
+                                     max-width: 200px; 
+                                     height: auto;
+                                     background-color: white;
+                                     border-radius: 10px;
+                                     padding: 5px;
+                                     display: block;
+                                     margin-top: auto;
+                                     margin-left: auto;
+                                     ">
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Botones debajo -->
+                     <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://www.behance.net/berenicesuncin" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Berenicecv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                <a href="https://www.linkedin.com/in/berenice-sunc%C3%ADn-587a442b3/" target="_blank" class="btn btn-info mx-2">
+                                     <i class="fab fa-linkedin"></i> LinkedIn
+                                 </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+  </div> 
+  <!--  modal1 -->
+  <div class="modal fade modal-morado" id="modalCristela" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Cristabel Escobar</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/Tex/C1.jpg" alt="Foto del Creador" class="creator-image-square img-fluid">
+                        </div>
+
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Kriss Studio</h4>
+                                    <p class="text-muted">Textiles / Accesorios</p>
+                                    <p class="description text-light" style="text-align: justify;">
+                                        Hola, soy Cristabel Escobar, diseñadora industrial y de productos.diseñando siempre bajo las necesidades y encontrando soluciones para el usuario, donde la creatividad y la innovación se unen para dar vida a nuevas ideas, tengo cierta experiencia en la materia y he trabajado en una serie de proyectos de desarrollo de nuevos productos.
+                                    </p>
+                                </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Cristela.jpg" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: 150px;
+                                    display: block;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    margin-top: auto;
+                                    margin-left: auto  ;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                            <a href="https://cristabelescobar53.wixsite.com/misitio/__feedback/client/7d3bf1da-4cf0-46a6-962a-e55c246499f6?fbclid=PAZXh0bgNhZW0CMTEAAab_pF0_gPq-WsRGY5clf9pEidUCsQaftJU8ZpUMirTa3gDdOIIJ4cGp9OQ_aem_AGWm1uhOfyudqOQ-nGUkRg" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="../img/cv/Cristabelcv.pdf" class="btn btn-outline-light mx-2" download>Descargar CV</a>
+                                <a href="https://www.instagram.com/kriss_studio11?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn btn-instagram">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  modal1 -->
+<div class="modal fade modal-morado" id="modalDaniela" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Daniela Ávalos</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/Tex/D1.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+ 
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Daniela Ávalos</h4>
+                                    <p class="text-muted">Textiles / Accesorios</p>
+                                    <p class="description text-light">Soy una diseñadora industrial apasionada por el mundo textil y de la indumentaria. Mi objetivo es crear productos y superficies textiles combinando tanto mi lado creativo como mi parte racional para obtener resultados que se adapten a las necesidades de las personas y se apeguen a las tendencias.</p>
+                                </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Daniela.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    background-color: white;
+                                    border-radius: 10px;
+                                    padding: 5px;
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                            <!-- Botón Ver Portafolio -->
+                            <a href="https://www.behance.net/gallery/209101727/Portafolio-Daniela-Avalos" target="_blank" class="btn btn-primary mx-2">
+                                Ver portafolio
+                            </a>
+                            <!-- Botón Descargar CV -->
+                            <a href="/img/cv/Danielacv.pdf" class="btn btn-outline-light mx-2" download>
+                                Descargar CV
+                            </a>
+                            <!-- Botón LinkedIn -->
+                            <a href="https://www.linkedin.com/in/daniela-%C3%A1valos-70014a201/" target="_blank" class="btn btn-info mx-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                                       
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>  
+ <!--  modal1 -->
+ <div class="modal fade modal-morado" id="modalKevin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+             <div class="modal-header border-0">
+                 <h5 class="modal-title text-light" id="exampleModalLabel">Kevin Peña</h5>
+                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <!-- Columna Izquierda: Imagen de la Persona -->
+                         <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                             <img src="../img/users/Tex/Kp1.jpg" alt="Foto del Creador" class="creator-image-square">
+                         </div>
+  
+                         <!-- Columna Derecha: Información y Logo -->
+                         <div class="col-12 col-md-8">
+                             <div class="d-flex flex-column flex-md-row align-items-center">
+                                 <!-- Información -->
+                                 <div class="flex-grow-1">
+                                     <h4 class="text-primary">Kevin Peña Diseño Industrial</h4>
+                                     <p class="text-muted">Textiles / Accesorios</p>
+                                     <p class="description text-light">Soy Diseñador Industrial y de Productos, la sensibilidad por el arte es algo que me ha caracterizado desde que tengo memoria, la comunicación gráfica me ha acompañado gran parte de mi vida, crear siempre ha sido una necesidad.
+
+                                        El Diseño Industrial combinado con mi trabajo personal me ha llevado a comprender que un buen producto siempre debe hacerse con amor.</p>
+                                 </div>
+                                 <!-- Logo a la Derecha -->
+                                 <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                     <img src="../img/Marcas/KevinP.jpg" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                     style="
+                                     max-width: 200px; 
+                                     height: auto;
+                                     background-color: white;
+                                     border-radius: 10px;
+                                     padding: 5px;
+                                     display: block;
+                                     margin-top: auto;
+                                     margin-left: auto;
+                                     ">
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Botones debajo -->
+                     <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">
+                             <a href="https://www.behance.net/kevinpe04" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                             <a href="/img/cv/KevinPcv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                <a href="https://www.instagram.com/esa.rte?igsh=MWJ0cXFpc2NnbXpiNg%3D%3D" target="_blank" class="btn btn-instagram">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+  </div> 
+<!--  modal1 -->
+<div class="modal fade modal-morado" id="modalMelisa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Melissa Ramírez</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Columna Izquierda: Imagen de la Persona -->
+                        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                            <img src="../img/users/Tex/Me1.jpg" alt="Foto del Creador" class="creator-image-square">
+                        </div>
+ 
+                        <!-- Columna Derecha: Información y Logo -->
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <!-- Información -->
+                                <div class="flex-grow-1">
+                                    <h4 class="text-primary">Meli B. Desing</h4>
+                                    <p class="text-muted">Textiles / Accesorios</p>
+                                    <p class="description text-light">Diseñadora industrial, combino creatividad y tecnología para
+                                        desarrollar productos y espacios que inspiran. Mi enfoque está
+                                        en crear experiencias que conecten emocionalmente con las
+                                        personas, fusionando de manera única funcionalidad y estética.</p>                                </div>
+                                <!-- Logo a la Derecha -->
+                                <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                    <img src="../img/Marcas/Melissa.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                    style="
+                                    max-width: 200px; 
+                                    height: auto;
+                                    background-color: white;
+                                    border-radius: 10px;
+                                    padding: 5px;
+                                    display: block;
+                                    margin-top: auto;
+                                    margin-left: auto;
+                                    ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones debajo -->
+                    <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                            
+                            <a href="https://www.behance.net/melissaramirez77" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                            <a href="/img/cv/Melissacv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                <a href="https://www.linkedin.com/in/melissa-ramirez-barahona-a840b52b3/" target="_blank" class="btn btn-info mx-2">
+                                     <i class="fab fa-linkedin"></i> LinkedIn
+                                 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div> 
+ <!--  modal1 -->
+ <div class="modal fade modal-morado" id="modalN12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+             <div class="modal-header border-0">
+                 <h5 class="modal-title text-light" id="exampleModalLabel">Nathalie Reyna</h5>
+                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <!-- Columna Izquierda: Imagen de la Persona -->
+                         <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                             <img src="../img/users/Tex/N2.jpg" alt="Foto del Creador" class="creator-image-square">
+                         </div>
+  
+                         <!-- Columna Derecha: Información y Logo -->
+                         <div class="col-12 col-md-8">
+                             <div class="d-flex flex-column flex-md-row align-items-center">
+                                 <!-- Información -->
+                                 <div class="flex-grow-1">
+                                     <h4 class="text-primary">Nathalie Reyna</h4>
+                                     <p class="text-muted">Textiles / Accesorios</p>
+                                     <p class="description text-light">Diseñadora Industrial apasionada por el diseño de moda, con una creatividad vibrante y una atención minuciosa al detalle. Mi enfoque se centra en crear soluciones innovadoras que destacan tanto en estética como en funcionalidad.</p>                                </div>
+                                 <!-- Logo a la Derecha -->
+                                 <div class="text-center text-md-end ms-md-3 mt-3 mt-md-0">
+                                     <img src="../img/Marcas/Nath.png" alt="Logo de la Marca" class="brand-logo-square img-fluid" 
+                                     style="
+                                     max-width: 200px; 
+                                     height: auto;
+                                     background-color: white;
+                                     border-radius: 10px;
+                                     padding: 5px;
+                                     display: block;
+                                     margin-top: auto;
+                                     margin-left: auto;
+                                     ">
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Botones debajo -->
+                     <div class="row mt-4">
+                        <div class="col-20 d-flex flex-column align-items-center gap-2">                             
+                            <a href="https://nathaliereyna.wixsite.com/my-site" target="_blank" class="btn btn-primary mx-2">Ver portafolio</a>
+                             <a href="/img/cv/Nathcv.pdf" class="btn btn-outline-light" download>Descargar CV</a>
+                                <a href="https://www.linkedin.com/in/nathalie-gabriela-p%C3%A9rez-reyna-784b40302/" target="_blank" class="btn btn-info mx-2">
+                                     <i class="fab fa-linkedin"></i> LinkedIn
+                                 </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+  </div> 
+
+  <script>
+    // Función para obtener el valor de un parámetro de la URL
+    function getQueryParam(param) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(param); // Devuelve el valor del parámetro
+    }
+
+    // Función para filtrar las tarjetas según la categoría
+    function filterCards(category) {
+        const cards = document.querySelectorAll('.card'); // Seleccionar todas las tarjetas
+
+        cards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category'); // Leer categoría de la tarjeta
+            if (category === 'all' || cardCategory === category) {
+                card.parentElement.style.display = 'block'; // Mostrar la tarjeta
+            } else {
+                card.parentElement.style.display = 'none'; // Ocultar la tarjeta
+            }
+        });
+    }
+
+    // Ejecutar el filtro al cargar la página
+    window.onload = () => {
+        const category = getQueryParam('category') || 'all'; // Leer categoría de la URL o usar 'all' por defecto
+        filterCards(category); // Filtrar las tarjetas
+    };
+</script>
+
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Sección de Descripción -->
+                <div class="col-md-4 footer-section">
+                    <h5>Sobre Ritmos</h5>
+                    <p>Ritmos es una plataforma donde los estudiantes de la Universidad Don Bosco muestran su creatividad a través del diseño. Explorando y mostrando innovaciones en arte y tecnología.</p>
+                </div>
+    
+                <!-- Sección de Navegación -->
+                <div class="col-md-4 footer-section">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="portafolios.html?category=all">Portafolios</a></li>
+                        <li><a href="../index.html#acerca">Acerca de</a></li>
+                        <li><a href="mailto:tu_correo@ejemplo.com?subject=Consulta%20desde%20la%20página%20Ritmos&body=Hola, quisiera más información acerca de Ritmos:D">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sección de Redes Sociales -->
+                <div class="col-md-4 footer-section">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61565048740814&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ritmos.di?igsh=NmQ2bnFtb3EwbTdm" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@ritmos.di?_t=8qcj5iytWLe&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/ritmos-di-357a61330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Sección de Patrocinadores -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h5 class="text-center" style="color: #F09D33;">Nuestros Patrocinadores</h5>
+                    <div class="sponsors d-flex flex-wrap justify-content-center align-items-center">
+                        <!-- Logos de patrocinadores -->
+                        <a href="https://www.instagram.com/toztecas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="../img/Patrocinadores/pf1.png" alt="Patrocinador 1" class="sponsor-logo"></a>
+                        <a href="https://diana.sv/" target="_blank"><img src="../img/Patrocinadores/psf2.png" alt="Patrocinador 2" class="sponsor-logo"></a>
+                        <a href="https://www.instagram.com/salvapura/p/CzHG1cQrMDh/" target="_blank"><img src="../img/Patrocinadores/psf3.png" alt="Patrocinador 3" class="sponsor-logo"></a>
+                        <a href=""><img src="../img/Patrocinadores/pf5.png" alt="Patrocinador 4" class="sponsor-logo"></a>
+                        <a href="https://www.smurfitkappa.com/sv" target="_blank"><img src="../img/Patrocinadores/pf4.png" alt="Patrocinador 5" class="sponsor-logo"></a>
+                        <a href="https://www.facebook.com/p/HAR-100065639192774/?_rdr" target="_blank"><img src="../img/Patrocinadores/pf3.png" alt="Patrocinador 6" class="sponsor-logo"></a>
+                        <a href="https://www.udb.edu.sv/udb/" target="_blank"><img src="../img/Patrocinadores/pf2.png" alt="Patrocinador 7" class="sponsor-logo" 
+                        style="max-width: 250px;
+                        max-height: 300px;"></a>
+    <!--                     <img src="img/Patrocinadores/db.png" alt="Patrocinador 8" class="sponsor-logo">
+     -->                </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom mt-4">
+                <p>&copy; 2024 Ritmos. Todos los derechos reservados.</p>
+                <p>Creado por <a href="https://www.instagram.com/luisortega__2/" target="_blank" class="animated-link">Luis Ortega</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-pp3FhZh4Y8fWU4RRAIfVQ5fbk9y5oXDT4zTqxDvkLp2HYiYI/O3HLC2zAO9/EbSw" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

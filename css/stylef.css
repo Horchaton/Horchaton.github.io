@@ -1,0 +1,972 @@
+/* Fondo de la página */
+body {
+    background-color: #1D0342;
+    color: #F2E8CF;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Barra de navegación */
+.custom-navbar {
+    background: linear-gradient(90deg, #1D0342, #4A3B85, #8B308B); /* Gradiente ajustado */
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacarla */
+}
+
+.custom-navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(184, 25, 121, 0), #F09D33, rgba(184, 25, 121, 0));
+    background-size: 200% 200%;
+    animation: glowing-bar 5s infinite linear;
+}
+
+/* Logo en la barra de navegación */
+.logo-navbar {
+    max-height: 80px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.section-divider {
+    height: 3px;
+    background: linear-gradient(90deg, #B81979, #F09D33, #B81979);
+    margin: 30px 0; /* Ajusta el espacio arriba y abajo */
+}
+
+
+/* Título principal con animación de gradiente */
+.text-gradient {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #B81979, #F09D33, #B81979, #F09D33);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-move 8s infinite linear;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 700px; /* Sin margen */
+    margin-bottom: 0;
+}
+
+/* Animación de gradiente */
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Línea separadora debajo del título */
+.text-container hr {
+    border: none;
+    height: 2px;
+    background-color: #F09D33;
+    width: 100px;
+    margin: 15px 0;
+}
+
+/* Subtexto y Descripción */
+.subtext {
+    color: #A2A2A2;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+.description {
+    color: #B0B0B0;
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    line-height: 1.4; /* Espaciado entre líneas */
+    max-width: 40%; /* Limita el ancho máximo */
+    margin: 10px auto; /* Margen automático para centrar */
+    text-align: center; /* Alineación centrada */
+}
+
+/* Botón personalizado */
+.btn-custom {
+    background-color: #F09D33;
+    color: #1D0342;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(240, 157, 51, 0.2);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #B81979;
+    color: #F2E8CF;
+    box-shadow: 0 6px 15px rgba(184, 25, 121, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Íconos de redes sociales */
+.navbar .nav-link i {
+    color: #F2E8CF;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    margin-left: 10px;
+}
+
+.navbar .nav-link i:hover {
+    color: #F09D33;
+}
+
+/* Contenedor principal */
+.main-header {
+    padding: 50px 0 20px; /* Espaciado superior e inferior */
+    display: flex; /* Usar flexbox para alinear los elementos */
+    flex-direction: column; /* Cambiar a columna */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Centra el texto */
+    padding-bottom: 0px;
+}
+
+
+
+/* Contenedor del carrusel */
+.photo-carousel-container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #1D0342;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para las imágenes del carrusel */
+.photo-carousel-container .carousel-item img {
+    border-radius: 12px;
+    max-height: 500px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(240, 157, 51, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Controles más grandes */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Texto del carrusel */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #F2E8CF;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Contenedor de los botones de portafolio */
+.portfolio-buttons-container {
+    background-color: rgba(42, 8, 69, 0.8); /* Fondo oscuro del contenedor */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme entre los botones */
+}
+
+/* Línea de borde animada */
+.portfolio-buttons-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    padding: 2px; /* Ajusta el tamaño del borde */
+    box-sizing: border-box;
+    background: linear-gradient(270deg, rgba(240, 157, 51, 0), rgba(240, 157, 51, 0.5), rgba(240, 157, 51, 0));
+    animation: border-light 5s infinite linear;
+}
+
+/* Animación de la luz que recorre el borde */
+@keyframes border-light {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Contenedor de los botones de portafolio */
+.portfolio-buttons-container {
+    background-color: rgba(42, 8, 69, 0.8); /* Fondo oscuro del contenedor */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 450px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 10px; /* Espacio entre los botones */
+    justify-items: center; /* Centra los botones en cada celda */
+    width: 500px; /* Ocupa el ancho completo del contenedor */
+}
+
+/* Estilo de cada tarjeta de botón */
+.portfolio-card {
+    position: relative;
+    border-radius: 8px;
+    padding: 20px; /* Añade padding interno */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para hacerlos destacar */
+    width: 180px; /* Ancho fijo */
+    height: 100px; /* Alto fijo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Efecto hover */
+.portfolio-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(240, 157, 51, 0.4);
+}
+
+/* Colores personalizados para cada botón */
+.portfolio-card-1 {
+    background-color: #B81979;
+}
+
+.portfolio-card-2 {
+    background-color: #5E4B9A;
+}
+
+.portfolio-card-3 {
+    background-color: #F09D33;
+}
+
+.portfolio-card-4 {
+    background-color: #4A9E81;
+}
+
+/* Ajuste del carrusel */
+.photo-carousel-container {
+    margin: 0; /* Sin margen entre el carrusel y el contenedor */
+}
+
+/* Sección de imagen y texto */
+.image-text-section {
+    margin-top: 0px;
+    padding: 60px 0; /* Aumentar el padding para dar más espacio */
+    background-color: #1D0342;
+}
+
+.image-text-section .container {
+    max-width: 1100px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05); /* Fondo sutil para destacar el área */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.image-text-section .row {
+    align-items: center;
+}
+
+.image-column img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra para la imagen */
+    max-width: 100%;
+    height: auto;
+}
+
+.text-column {
+    padding-left: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.text-column h2 {
+    color: #F09D33;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.text-column p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #F2E8CF;
+    margin-bottom: 0;
+    text-align: justify;
+
+}
+/* Animaciones de entrada iniciales */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Aplica la animación de entrada solo al cargar */
+.image-column img {
+    animation: fadeInLeft 1.5s ease-out;
+}
+
+.text-column {
+    animation: fadeInRight 1.5s ease-out;
+}
+
+/* Escala suave en hover */
+.image-column img,
+.text-column {
+    transition: transform 0.3s ease-in-out; /* Transición suave para la escala */
+}
+
+.image-text-section:hover .image-column img,
+.image-text-section:hover .text-column {
+    transform: scale(1.01); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+.video-intro {
+    position: relative;
+    height: 90vh; /* Reduce la altura al 90% del viewport */
+    overflow: hidden;
+}
+
+/* Contenedor del video */
+.video-intro {
+    position: relative;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    overflow: hidden;
+    margin-top: -30px;
+
+}
+
+/* Estilo del video */
+.fullscreen-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+}
+
+/* Superposición de texto */
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.intro-logo {
+    width: 60%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #B81979, #F09D33); /* Gradiente en el texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    border-radius: 8px;
+    margin-top: 700px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: #F09D33;
+    z-index: 3;
+    animation: bounce 2s infinite;
+}
+
+.scroll-down-indicator {
+    text-align: center;
+    margin-top: -45px;
+    font-size: 2rem;
+    color: #F09D33;
+    animation: bounce 2s infinite;
+}   
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-section {
+    background-color: #1D0342;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 0;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #B81979, #F09D33, #B81979, #F09D33);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-move 8s infinite linear;
+}
+
+.intro-text {
+    animation: fadeInText 2s ease-out;
+}
+
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Contenedor de filtros */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.filter-button {
+    background-color: #5E4B9A; /* Azul oscuro que combina con el tema */
+    color: #F2E8CF; /* Texto claro */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-yellow:hover {
+    background-color: #fff42d; /* Rosa vibrante para hover */
+    transform: translateY(-2px);
+    color: black;
+}
+.btn-white:hover {
+    background-color: #dedede; /* Rosa vibrante para hover */
+    transform: translateY(-2px);
+    color: black;
+}
+.btn-pink:hover {
+    background-color: #e454d8; /* Rosa vibrante para hover */
+    transform: translateY(-2px);
+}
+.btn-purple:hover {
+    background-color: #a721cc; /* Rosa vibrante para hover */
+    transform: translateY(-2px);
+}
+
+/* Contenedor de las cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 250px); /* Define 4 columnas con un ancho más grande */
+    gap: 40px; /* Aumenta el espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas en el contenedor */
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+/* Estilo base para las tarjetas */
+.card {
+    background-color: #2A0E50;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra normal */
+    padding: 20px;
+    color: #F2E8CF;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición para animar el efecto */
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Efecto de iluminación al hacer hover */
+.card:hover {
+    transform: scale(1.03); /* Le da un ligero aumento */
+    box-shadow: 0 0 5px rgba(255, 251, 39, 0.907), 0 0 12px rgba(255, 230, 38, 0.978); /* Iluminación en el borde */
+}
+
+.card-rose:hover {
+    transform: scale(1.03); /* Le da un ligero aumento */
+    box-shadow: 0 0 5px rgb(242, 97, 215), 0 0 12px rgba(238, 128, 255, 0.978); /* Iluminación en el borde */
+}
+.card-white:hover {
+    transform: scale(1.03); /* Le da un ligero aumento */
+    box-shadow: 0 0 5px rgb(183, 183, 183), 0 0 12px rgba(187, 187, 187, 0.978); /* Iluminación en el borde */
+}
+.card-purple:hover {
+    transform: scale(1.03); /* Le da un ligero aumento */
+    box-shadow: 0 0 5px rgb(140, 70, 163), 0 0 12px rgba(184, 92, 198, 0.978); /* Iluminación en el borde */
+}
+
+.card img {
+    width: 100%; /* Se ajusta al ancho de la tarjeta */
+    height: 200px; /* Altura fija para mantener la alineación */
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el área sin deformarse */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+    margin-bottom: 6px;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #F09D33;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #A2A2A2;
+}
+
+.card-tag {
+    background-color: #5E4B9A;
+    color: #F2E8CF;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.modal-content {
+    background-color: #201546 !important; /* Color de fondo púrpura oscuro */
+    border-radius: 12px;
+    padding: 20px;
+    color: #ff0000 !important; /* Naranja vibrante */
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.modal-title {
+    color: #FFB347 !important; /* Naranja para el título */
+    font-weight: bold;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-section {
+    flex: 2;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-image-square {
+    width: 200PX;
+    height: 100%;
+    border-radius: 8px;
+    border: 3px solid #FFB347; /* Borde naranja */
+    box-shadow: 0px 0px 8px rgba(255, 179, 71, 0.6);
+}
+
+.brand-logo-square {
+    width: 200PX;
+    height: 200PX;
+    border-radius: 8px;
+    border: 0.5px solid #FFB347; /* Borde púrpura brillante */
+    box-shadow: 0px 0px 6px rgba(255, 225, 27, 0.5);
+    padding: 10px;
+}
+
+.text-primary {
+    color: #FFB347 !important; /* Naranja suave para el nombre de la marca */
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #E5E5E5; /* Texto en gris claro */
+    max-width: 400px;
+}
+
+.center-section p.text-muted {
+    color: #f9c479 !important; /* Gris claro para el subtítulo */
+}
+.btn-primary {
+    background-color: #FFB347; /* Púrpura brillante para el botón principal */
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-outline-light {
+    color: #FFB347; /* Naranja para el borde del segundo botón */
+    border-color: #FFB347;
+    font-weight: bold;
+}
+
+.btn-primary:hover, .btn-outline-light:hover {
+    opacity: 0.9;
+    background-color: #FFB347;
+}
+
+
+/* Cambia el color del título y subtítulo dentro del modal */
+.modal-rose .modal-title {
+    color: #ee719b !important; /* Cambia esto al color que mejor combine */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.modal-rose .center-section h4 {
+    color: #ee719b !important; /* Naranja que complementa el fondo */
+    font-weight: bold;
+}
+
+.modal-rose .center-section p.text-muted {
+    color: #d794ab !important; /* Gris claro para el subtítulo */
+}
+
+/* Borde púrpura claro alrededor de las imágenes */
+.modal-rose .creator-image-square,
+.modal-rose .brand-logo-square {
+    border: 3px solid #ee719b; /* Púrpura claro */
+    border-radius: 10px; /* Opcional: ajusta para cambiar las esquinas */
+}
+
+/* Estilos de los botones */
+.modal-rose .btn-primary {
+    background-color: #FF69B4; /* Rosado fuerte para destacar */
+    border: none;
+    color: white;
+}
+
+.modal-rose .btn-primary:hover {
+    background-color: #FF85C4; /* Rosado claro al pasar el mouse */
+}
+
+.modal-rose .btn-outline-light {
+    color: #FF85C4; /* Naranja para el texto del botón */
+    border: 2px solid #8A92B2; /* Borde púrpura claro */
+}
+
+.modal-rose .btn-outline-light:hover {
+    background-color: #dddddd; /* Fondo púrpura claro al pasar el mouse */
+    color: FF85C4;
+}
+
+/* Cambia el color del título y subtítulo dentro del modal */
+.modal-rose .modal-title {
+    color: #ee719b !important; /* Cambia esto al color que mejor combine */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.modal-rose .center-section h4 {
+    color: #ee719b !important; /* Naranja que complementa el fondo */
+    font-weight: bold;
+}
+
+.modal-rose .center-section p.text-muted {
+    color: #d794ab !important; /* Gris claro para el subtítulo */
+}
+
+/* Borde púrpura claro alrededor de las imágenes */
+.modal-rose .creator-image-square,
+.modal-rose .brand-logo-square {
+    border: 3px solid #ee719b; /* Púrpura claro */
+    border-radius: 10px; /* Opcional: ajusta para cambiar las esquinas */
+}
+
+/* Estilos de los botones */
+.modal-rose .btn-primary {
+    background-color: #FF69B4; /* Rosado fuerte para destacar */
+    border: none;
+    color: white;
+}
+
+.modal-rose .btn-primary:hover {
+    background-color: #FF85C4; /* Rosado claro al pasar el mouse */
+}
+
+.modal-rose .btn-outline-light {
+    color: #FF85C4; /* Naranja para el texto del botón */
+    border: 2px solid #8A92B2; /* Borde púrpura claro */
+}
+
+.modal-rose .btn-outline-light:hover {
+    background-color: #dddddd; /* Fondo púrpura claro al pasar el mouse */
+    color: FF85C4;
+}
+
+/* white */
+/* Cambia el color del título y subtítulo dentro del modal */
+.modal-white .modal-title {
+    color: #F2E8CF !important; /* Cambia esto al color que mejor combine */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.modal-white .center-section h4 {
+    color: #F2E8CF !important; /* Naranja que complementa el fondo */
+    font-weight: bold;
+}
+
+.modal-white .center-section p.text-muted {
+    color: #c4beaf !important; /* Gris claro para el subtítulo */
+}
+
+/* Borde púrpura claro alrededor de las imágenes */
+.modal-white .creator-image-square,
+.modal-white .brand-logo-square {
+    border: 3px solid #F2E8CF; /* Púrpura claro */
+    border-radius: 10px; /* Opcional: ajusta para cambiar las esquinas */
+}
+
+/* Estilos de los botones */
+.modal-white .btn-primary {
+    background-color: #F2E8CF; /* Rosado fuerte para destacar */
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+.modal-white .btn-primary:hover {
+    background-color: #F2E8CF; /* Rosado claro al pasar el mouse */
+}
+
+.modal-white .btn-outline-light {
+    color: #F2E8CF; /* Naranja para el texto del botón */
+    border: 2px solid #8A92B2; /* Borde púrpura claro */
+}
+
+.modal-white .btn-outline-light:hover {
+    background-color: #dddddd; /* Fondo púrpura claro al pasar el mouse */
+    color: black;
+}
+
+/* Morado */
+/* Cambia el color del título y subtítulo dentro del modal */
+.modal-morado .modal-title {
+    color: #c59df3 !important; /* Cambia esto al color que mejor combine */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.modal-morado .center-section h4 {
+    color: #c59df3 !important; /* Naranja que complementa el fondo */
+    font-weight: bold;
+}
+
+.modal-morado .center-section p.text-muted {
+    color: #d4b8f5 !important; /* Gris claro para el subtítulo */
+}
+
+/* Borde púrpura claro alrededor de las imágenes */
+.modal-morado .creator-image-square,
+.modal-morado .brand-logo-square {
+    border: 3px solid #c59df3; /* Púrpura claro */
+    border-radius: 10px; /* Opcional: ajusta para cambiar las esquinas */
+}
+
+/* Estilos de los botones */
+.modal-morado .btn-primary {
+    background-color: #c59df3; /* Rosado fuerte para destacar */
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+.modal-morado .btn-primary:hover {
+    background-color: white; /* Rosado claro al pasar el mouse */
+    color: #9d55ef;
+}
+
+.modal-morado .btn-outline-light {
+    color: #F2E8CF; /* Naranja para el texto del botón */
+    border: 2px solid #8A92B2; /* Borde púrpura claro */
+}
+
+.modal-morado .btn-outline-light:hover {
+    background-color: #dddddd; /* Fondo púrpura claro al pasar el mouse */
+    color: black;
+}
+
+/* Footer con fondo diferenciado */
+.custom-footer {
+    background: linear-gradient(180deg, #2A0E50, #1D0342); /* Gradiente de dos tonos oscuros */
+    color: #F2E8CF;
+    padding: 40px 0;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.footer-section h5 {
+    color: #F09D33;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: #A2A2A2;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links li a {
+    color: #F2E8CF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #F09D33;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #F2E8CF;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #F09D33;
+}
+
+.footer-bottom {
+    border-top: 1px solid #3E1B5C;
+    padding-top: 15px;
+    text-align: center;
+    color: #A2A2A2;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+/* Estilo para el enlace animado */
+.animated-link {
+    background: linear-gradient(90deg, #B81979, #F09D33, #4A9E81, #5E4B9A);
+    background-size: 300% 300%;
+    color: #F2E8CF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 5px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorShift 6s infinite linear;
+}
+
+/* Animación de cambio de color */
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Opcional: Cambio de color en hover */
+.animated-link:hover {
+    background-size: 200% 200%;
+    animation-duration: 4s;
+}
